@@ -33,9 +33,9 @@ function Navbar({ toggleMenu }) {
         <div className="gap-3 flex">
           <button
             onClick={toggleMenu}
-            className="w-52 h-14 rounded-2xl bg-white/10 text-white"
+            className="w-32 h-14 rounded-2xl bg-white/10 text-white"
           >
-            Parolni unutdingizmi?
+            Login
           </button>
           <button className="w-52 h-14 bg-[#E3CA5C]/20 rounded-2xl text-[#E3CA5C] border-solid border-2 border-[#E3CA5C]">
             Natijani ko'rish

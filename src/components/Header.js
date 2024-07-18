@@ -53,19 +53,25 @@ function Header({ toggleMenu, state }) {
       </div>
       {state ? (
         <div className="backdrop-blur-md w-full h-[100vh]">
-          <div className="w-[497px] h-80 bg-[#272727]/10 pt-8 pl-9 relative z-50 mx-auto border border-amber-300 rounded-2xl">
+          <div className="w-[497px] h-96 bg-[#272727]/10 pt-8 pl-9 relative z-50 mx-auto border border-amber-300 rounded-2xl">
             <div className="w-8 h-8 bg-[#A89F9F]/10 text-white rounded-xl pt-1.5 pl-1.5 ml-[400px] ">
               <IoCloseSharp onClick={() => toggleMenu()} className="w-5 h-5" />
             </div>
-            <p className="text-white text-sm mt-7">Parolni unutdingizmi?</p>
+            <p className="text-white text-sm mt-7">Login va Parol</p>
             <div className="">
               <input
-                type="email"
+                type="text"
                 required
                 className="w-96 h-14 bg-white/10 rounded-xl border-solid border-2 border-amber-300 outline-none text-white pl-7 block mt-9"
-                placeholder="Email"
+                placeholder="Login"
               />
-              <button className="w-96 h-11 bg-amber-300 rounded-xl mt-5">
+              <input
+                type="password"
+                required
+                className="w-96 h-14 bg-white/10 rounded-xl border-solid border-2 border-amber-300 outline-none text-white pl-7 block mt-9"
+                placeholder="Parol"
+              />
+              <button onClick={() => toggleMenu()} className="w-96 h-11 bg-amber-300 rounded-xl mt-5">
                 Tayyor
               </button>
             </div>
