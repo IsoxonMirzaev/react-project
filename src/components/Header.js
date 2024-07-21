@@ -4,9 +4,9 @@ import { IoCloseSharp } from "react-icons/io5";
 function Header({ toggleMenu, state }) {
   return (
     <>
-      <div className="pl-32 absolute bg-black">
+      <div className="pl-32 absolute bg-black  h-[100vh]">
         <div className="flex">
-          <div className="relative">
+          <div className="relative text-center lg:text-left">
             <h1 className="text-white text-[63px] font-extrabold font-sans w-[800px]">
               ALGORITM <span className="text-[#CFAD4F]">COIN</span>GA <br />{" "}
               XUSH KELIBSIZ!
@@ -16,17 +16,17 @@ function Header({ toggleMenu, state }) {
             </p>
           </div>
           <div>
-            <img src={coin} alt="" className="relative" />
+            <img src={coin} alt="" className="hidden xl:flex relative" />
           </div>
         </div>
-        <div className="bg-white/10 w-[1280px] h-80 rounded-3xl pt-12 pl-14">
+        <div className="bg-white/10 w-[650px] xl:w-[1280px] h-80 rounded-3xl pt-12 pl-14 mx-auto lg:mx-0">
           <div>
             <h1 className="text-white text-5xl font-bold">Veb-saytga kirish</h1>
             <p className="text-[#878787] text-lg mt-2">
               Password yoki username xato emasligiga ishonch hosil qiling
             </p>
           </div>
-          <div className="flex items-center gap-7 mt-20">
+          <div className="xl:flex items-center gap-7 mt-20">
             <input
               type="text"
               placeholder="username"
